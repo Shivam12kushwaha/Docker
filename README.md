@@ -8,5 +8,6 @@
 **Solution:** Docker provides isolated environments for each application, preventing interference adn ensuring stable performance.
 ### Scalability:
 **Problem:** Scaling applications to handle increased load can be challenging, requireing manual intervention and configuration.\
-**Solution:** Docker make it easy to scale applications horizontally by running multiple container instances allowing for quick and efficient scaling.\
+**Solution:** Docker make it easy to scale applications horizontally by running multiple container instances allowing for quick and efficient scaling.
 ### How exactly Docker is used?
+![Dockerfile Example](https://media.geeksforgeeks.org/wp-content/uploads/20230419170724/Docker-hub-registry.webp)
