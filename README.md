@@ -23,5 +23,17 @@ Here is an in-depth look at the Docker.\
 ->**Function:** The Docker Command Line Interface is the tool that users interact with to communicate with Docker Daemon.\
 ->**Usage:** Users run Docker Command through the CLI to perform tasks like building images, running containers and managing Docker resources.\
 (3) **REST API:**\
-->**Funtion:** The Docker REST API allows communication between the Docker CLI and the Docker Daemon. Iy also enables programmatics interaction with teh Docker.\
+->**Funtion:** The Docker REST API allows communication between the Docker CLI and the Docker Daemon. Iy also enables programmatics interaction with the Docker.\
 ->**Usage:** Develoopers can use the API to automate Docker operations or integrate Docker functionality into their applications.
+### Docker Image:
+A Docker Image i a lightweight, stand-alone and executable software package that includes everything needs to run a piece of software, such as the code, runtime, libraries, environments variables and configuration files. Images are used to create Docker Containers, which are instances of these images.
+### Components of Docker Image:
+1. **Base Image:** The starting point for building an image. It could be a minimal OS image like Alpine, a full-fledged OS like Ubuntu or even another application image like Python or Node.
+2. **Application Code:** The actual code and files necessary for the application to run
+3. **Dependencies:** Libraries, frameworks and packages required by the application.
+4. **Meta Data:** Information about the image such as environment variables, lables and exposed ports.
+### Docker Image Life-cycle:
+1. **Creation:** Images are created using the docker build command, which processes the instructions in a Docker File to create the image layers.
+2. **Storage:** Images are stored locally on the host machine. They can also be pushed and pulled from Docker registeries like DockerHub, AWS ECR, or Google Container Registry.
+3. **Distribution:** Images can be stored by pushing them to a Docker registry, allowing others to pull and use the same image.
+4. **Execution:** Images are executed by running containers which are instances of these images.
