@@ -37,3 +37,16 @@ A Docker Image i a lightweight, stand-alone and executable software package that
 2. **Storage:** Images are stored locally on the host machine. They can also be pushed and pulled from Docker registeries like DockerHub, AWS ECR, or Google Container Registry.
 3. **Distribution:** Images can be stored by pushing them to a Docker registry, allowing others to pull and use the same image.
 4. **Execution:** Images are executed by running containers which are instances of these images.
+### Docker File:
+A Docker file is a text file that contains a series of instructions used to build a Docker image. Each instruction in a Docker File creates a layer in the image, allowing for efficient image creation and reuse of layers. Docker Files are used to automate the image creation process, ensuring consistency and reproducibilty.
+### Key components of Docker File:
+1. **Base Image(FROM):** Specifies the starting point for the image,which could be a minimal operating system, a specific version of a language runtime or another image example FROM ubuntu:20.04.
+2. **Labels(LABEL):** Adds meta data to the image such as version, description or maintainer. Example - LABEL version = '1.0' description = 'My Application'.
+3. **Run Command(RUN):** Executes commands in the during the build process, typically used to install software packages. Example: RUN apt-get update & & apt-get install-y python3.
+4. **Copy Files(COPY):** Copies files or directories from the host systems to the image. Example: ENV PATH|app|bin:$PATH.
+5. **Work Directory(WORKDIR):** Sets the working directory for subsequent instructions. Example: WORKDIR/app.
+6. **Expose Ports(EXPOSE):** Informs Docker that the container listens on specified network port. Example: Expose 8080.
+7. **Command(CMD):** Provides a default command to run when the container starts. Example: CMD['Python','app.py'].
+8. **Volume(VOLUME):** creates a mount point with a specified path and marks it as holding externally mounted volumes from the host or other containers. Example: VOLUME['|data'].
+9. **Arguments(ARG):** Defines build-time variables. Example: ARG VERSION=1.0
+### Docker Container: 
