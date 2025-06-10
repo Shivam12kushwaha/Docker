@@ -49,4 +49,14 @@ A Docker file is a text file that contains a series of instructions used to buil
 7. **Command(CMD):** Provides a default command to run when the container starts. Example: CMD['Python','app.py'].
 8. **Volume(VOLUME):** creates a mount point with a specified path and marks it as holding externally mounted volumes from the host or other containers. Example: VOLUME['|data'].
 9. **Arguments(ARG):** Defines build-time variables. Example: ARG VERSION=1.0
-### Docker Container: 
+### Docker Container:
+A Docker Container is a lightweight, portable and isolated environment that encapsulatesan application and its dependencies, allowing it to run consistently accross different computing environments. Containers are crreated from Docker images, which are immutable and contain all the necessary components for the application to run.
+### Registry:
+A Docker Registry is a service that stores and distributes Docker images. It acts as a repository, where users can push, pull and manage Docker Images. DockerHub is the most well-known public registry but private registries can also be set up to securely store and manage images within an Organization.
+### Key Components of Docker Registry:
+1. **Repositeries:** A Repository is a collection of related Docker images, typically different versions of the same applications. Each repository can hold multiple tags, representing different versions of an image.\
+2. **Tags:** tags are used to versions images within a repository. For example, myapp:1.0, myapp:2.0 and myapp:latest are tags for different versions of the my app image.
+### Types of Docker Registeries:
+1. Docker Hub
+2. Private Registeries
+3. Third Party Registeries
