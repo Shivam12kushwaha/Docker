@@ -17,7 +17,7 @@ Here is an in-depth look at the Docker.\
 ![Dockerfile Example](https://process.filestackapi.com/cache=expiry:max/iP10SKJZQOKeZbtMqTWR)
 ### Components of Docker Engine:
 (1) **Docker Daemon(Dockered):**\
-->**Funtion:** The Docker Daemon is the background service running on the host machine. It manages Docker objectssuch as images, containers, networks and volumes.\
+->**Function:** The Docker Daemon is the background service running on the host machine. It manages Docker objectssuch as images, containers, networks and volumes.\
 ->**Interaction:** It listens for Docker API requests and processes them, handling containers life cycle operations like start, stop, restart etc.\
 (2) **Docker CLI(Docker):**\
 ->**Function:** The Docker Command Line Interface is the tool that users interact with to communicate with Docker Daemon.\
